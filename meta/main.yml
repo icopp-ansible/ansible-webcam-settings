@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Ian Copp
+  description: Install Webcam Settings via the Mac App Store.
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+    - name: MacOSX
+      versions:
+        - all
+  galaxy_tags:
+    - application
+
+dependencies:
+  - role: icopp.mas-cli
+    when: ansible_os_family == "Darwin"
